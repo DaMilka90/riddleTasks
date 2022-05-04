@@ -6,7 +6,6 @@ public class ChangeCalculator {
 
 	public static void main(String[] args) {
 
-		
 		Long bill10;
 		Long money;
 
@@ -19,49 +18,50 @@ public class ChangeCalculator {
 		// Calculation
 		bill10 = money / 10;
 		money = money % 10;
-		
-		//	switch money to int for switch case
-		
-		String change = ""+money;
+
+		// switch money to int for switch case
+
+		String change = "" + money;
 		int m = Integer.parseInt(change);
-		
+
 		switch (m) {
 		case 1:
 			moneyNotChangable();
 			break;
 		case 2:
-			System.out.println("you get: " + bill10 + " 10€ bills and one 2€ coin");
+			System.out.println("you get: " + bill10 + " 10â‚¬ bills and one 2â‚¬ coin");
 			break;
 		case 3:
 			moneyNotChangable();
 			break;
 		case 4:
-			System.out.println("you get: " + bill10 + " 10€ bills and two 2€ coins");
+			System.out.println("you get: " + bill10 + " 10â‚¬ bills and two 2â‚¬ coins");
 			break;
 		case 5:
-			System.out.println("you get: " + bill10 + " 10€ bills and one 5€ bill");
-		break;
+			System.out.println("you get: " + bill10 + " 10â‚¬ bills and one 5â‚¬ bill");
+			break;
 		case 6:
-			System.out.println("you get: " + bill10 + " 10€ bills and three 2€ coins");
+			System.out.println("you get: " + bill10 + " 10â‚¬ bills and three 2â‚¬ coins");
 			break;
 		case 7:
-			System.out.println("you get: " + bill10 + " 10€ bills, one 5€ bill and one 2€ coin");
+			System.out.println("you get: " + bill10 + " 10â‚¬ bills, one 5â‚¬ bill and one 2â‚¬ coin");
 			break;
 		case 8:
-			System.out.println("you get: " + bill10 + " 10€ bills and four 2€ coins");
-		break;
+			System.out.println("you get: " + bill10 + " 10â‚¬ bills and four 2â‚¬ coins");
+			break;
 		case 9:
-			System.out.println("you get: " + bill10 + " 10€ bills, one 5€ bill and two 2€ coin");
+			System.out.println("you get: " + bill10 + " 10â‚¬ bills, one 5â‚¬ bill and two 2â‚¬ coin");
 			break;
 		case 0:
-			System.out.println("you get: " + bill10 + " 10€ bills");
+			System.out.println("you get: " + bill10 + " 10â‚¬ bills");
+			break;
 		}
-		
+
 		keyboard.close();
 	}
 
 	private static void moneyNotChangable() {
-		System.out.println("The enteret amont cannot be changed into 2€ coins 5€ bills and 10€ bills");
+		System.out.println("The enteret amont cannot be changed into 2â‚¬ coins 5â‚¬ bills and 10â‚¬ bills");
 	}
 
 }
